@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistička agencija "Avanturist"</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main, footer {
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+
+        nav li {
+            margin-right: 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        
+
+        footer img {
+            width: 50px; 
+            height: auto;
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 50%;
+        }
+
+        form textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #555;
+            color: #fff;
+            border: 1px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            align-self: flex-start;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Turistička agencija "Avanturist"</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#onama">O nama</a></li>
+            <li><a href="#nasedjelatnosti">Naše djelatnosti</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+     <h2>Turistička agencija "Avanturist"</h2>
+        <section id="onama">
+            <h4>O nama</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img src="slike/random.webp" alt="About Image">
+        </section>
+
+        <section id="nasedjelatnosti">
+            <h4>Naše djelatnosti</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img src="slike/Mind-and-Soul.jpeg" alt="Activities Image">
+        </section>
+
+        <section id="kontakt">
+            <h4>Kontakt</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <form action="#" method="post">
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Pošalji poruku">
+            </form>
+        </section>
+        
+    </main>
+    
+
+    <footer>
+        <hr>
+        <p class="copyright">Avanturist &copy; 2019.</p>
+        <a href="mailto:ivakljajicc@gmail.com">
+            <img src="slike/logom.webp" alt="Logo">
+        </a>
+        
+    </footer>
+
+</body>
+</html>
